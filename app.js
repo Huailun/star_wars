@@ -31,7 +31,11 @@ function bindButton() {
       for (var k = 0; k < response.results.length; k++) {
         (function(y) {
           var val = $("#input").val();
-          if ( val.toLowerCase() === response.results[y].name.toLowerCase()) {
+          if ( val.toLowerCase() !== response.results[y].name.toLowerCase()){
+             // help users to find names
+             $("#list-names").css("visibility","visible");
+          } else if ( val.toLowerCase() === response.results[y].name.toLowerCase())
+          {
             name.innerText = response.results[y].name;
             console.log(response.results[y].name);
             height.innerText = response.results[y].height;
