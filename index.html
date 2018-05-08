@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class='panel panel-primary' id="star">
+            <div class='panel-heading'>Character Info of Star Wars</div>
+                <div class='panel-body'>
+                    <div class='row'>
+                        <div class='col-md-6'>
+                            <div class='row'>
+                                <div class='col-md-3'>Name:</div>
+                                <div class='col-md-6' id='name'></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Height:</div>
+                                <div class='col-md-6' id='height'></div>
+                            </div>
+                            <div class='row'>
+                                    <div class='col-md-3'>Mass:</div>
+                                    <div class='col-md-6' id='mass'></div>
+                                </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Hair Color:</div>
+                                <div class='col-md-6' id='hair-color'></div>
+                            </div>
+                            <div class='row'>
+                                    <div class='col-md-3'>Skin Color:</div>
+                                    <div class='col-md-6' id='skin-color'></div>
+                                </div>
+                                <div class='row'>
+                                        <div class='col-md-3'>Eye Color:</div>
+                                        <div class='col-md-6' id='eye-color'></div>
+                                    </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Birth Year:</div>
+                                <div class='col-md-6' id='birth-year'></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Gender:</div>
+                                <div class='col-md-6' id='gender'></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Home World:</div>
+                                <div class='col-md-6' id='home'></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-3'>Movie Apperances:</div>
+                                <div class='col-md-6' id='movieList'></div>
+                            </div>
+                        </div>                  
+                        <div class='col-md-6'>
+                            <img class='center-block img-responsive' src=''>
+                        </div>
+                    </div>
+                </div>
+                <div class='panel-footer'>
+                        <div class='row'>
+                                <div class='col-md-3'>Enter Name of Character from Star Wars:</div>
+                                <div class='col-md-6'>
+                                    <input type='text' id='input' />
+                                    <input type="button" id="submit" class="btn btn-primary" value="Submit"/>
+                                </div>
+                                <div class='col-md-6 col-md-offset-3' style="visibility: hidden" id="list-names">Cannot find names? <a href="https://www.ranker.com/crowdranked-list/the-best-characters-in-the-star-wars-universe" target="_blank">Click here</a></div>
+                        </div>
+                </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>                          
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="app.js" charset="UTF-8"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--div id="docBod">
+        </div>  
+        <div class="container text-center">
+          <p>
+            <button id="prev" class="btn btn-warning btn-sml" role="button">« Previous</button>
+            <button id="next" class="btn btn-warning btn-sml" role="button">Continue »</button>
+          </p>
+        </div>-->
+    </body>
+</html>
