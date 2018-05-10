@@ -11,6 +11,7 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="star.ico">
     </head>
     <body>
         <div class='panel panel-primary' id="star">
@@ -59,21 +60,21 @@
                                 <div class='col-md-5' id='movieList'></div>
                             </div>
                             <div class='row'>
-                                <div class='col-md-6'><button id="show" onclick="showPosters()">Click to show posters</button></div>
+                                <div class='col-md-6'><button id="show" class="btn btn-info" onclick="showPosters()">Click to show posters</button></div>
                             </div>
                         </div>                  
                         <div class='col-md-6'>
                             <div id="carousel-example-generic" data-ride="carousel">
                                 <!-- Indicators -->
-                                <ol class="carousel-indicators"></ol>
+                                <ol class="carousel-indicators" ></ol>
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner"></div>
+                                <div class="carousel-inner" role="listbox"></div>
                                 <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
+                                  <span class="glyphicon glyphicon-chevron-left" style="visibility: hidden" id="arrowR"></span>
                                 </a>
-                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right" style="visibility: hidden" id="arrow"></span>
                                 </a>
                               </div>
                         </div>
