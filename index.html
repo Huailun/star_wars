@@ -17,50 +17,65 @@
             <div class='panel-heading'>Character Info of Star Wars</div>
                 <div class='panel-body'>
                     <div class='row'>
-                        <div class='col-md-6'>
+                        <div class='col-md-5'>
                             <div class='row'>
                                 <div class='col-md-3'>Name:</div>
-                                <div class='col-md-6' id='name'></div>
+                                <div class='col-md-6 col-md-offset-1' id='name'></div>
                             </div>
                             <div class='row'>
                                 <div class='col-md-3'>Height:</div>
-                                <div class='col-md-6' id='height'></div>
+                                <div class='col-md-6 col-md-offset-1' id='height'></div>
                             </div>
                             <div class='row'>
                                     <div class='col-md-3'>Mass:</div>
-                                    <div class='col-md-6' id='mass'></div>
+                                    <div class='col-md-6 col-md-offset-1' id='mass'></div>
                                 </div>
                             <div class='row'>
                                 <div class='col-md-3'>Hair Color:</div>
-                                <div class='col-md-6' id='hair-color'></div>
+                                <div class='col-md-6 col-md-offset-1' id='hair-color'></div>
                             </div>
                             <div class='row'>
                                     <div class='col-md-3'>Skin Color:</div>
-                                    <div class='col-md-6' id='skin-color'></div>
+                                    <div class='col-md-6 col-md-offset-1' id='skin-color'></div>
                                 </div>
                                 <div class='row'>
                                         <div class='col-md-3'>Eye Color:</div>
-                                        <div class='col-md-6' id='eye-color'></div>
+                                        <div class='col-md-6 col-md-offset-1' id='eye-color'></div>
                                     </div>
                             <div class='row'>
                                 <div class='col-md-3'>Birth Year:</div>
-                                <div class='col-md-6' id='birth-year'></div>
+                                <div class='col-md-6 col-md-offset-1' id='birth-year'></div>
                             </div>
                             <div class='row'>
                                 <div class='col-md-3'>Gender:</div>
-                                <div class='col-md-6' id='gender'></div>
+                                <div class='col-md-6 col-md-offset-1' id='gender'></div>
                             </div>
                             <div class='row'>
                                 <div class='col-md-3'>Home World:</div>
-                                <div class='col-md-6' id='home'></div>
+                                <div class='col-md-6 col-md-offset-1' id='home'></div>
                             </div>
                             <div class='row'>
-                                <div class='col-md-3'>Movie Appearances:</div>
-                                <div class='col-md-6' id='movieList'></div>
+                                <div class='col-md-4'>Movie Appearances:</div>
+                                <div class='col-md-5' id='movieList'></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-6'><button id="show" onclick="showPosters()">Click to show posters</button></div>
                             </div>
                         </div>                  
                         <div class='col-md-6'>
-                            <img class='center-block img-responsive' src=''>
+                            <div id="carousel-example-generic" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators"></ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner"></div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -78,8 +93,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>                          
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="app.js" charset="UTF-8"></script>        
+        <script src="app.js" charset="UTF-8"></script>
         <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>      
     </body>
 </html>
