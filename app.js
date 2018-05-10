@@ -175,7 +175,8 @@ function showPosters(){
   }
     
 }
-console.log(imgSrc);
+$("#arrow").css("visibility","visible");
+$("#arrowR").css("visibility","visible");
 
 $(document).ready(function(){  
   for(var j=0 ; j < imgSrc.length ; j++) {
